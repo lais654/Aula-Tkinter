@@ -1,0 +1,31 @@
+from tkinter import *
+from tkinter import ttk 
+from tkinter import messagebox 
+
+#Janela principal 
+janela = Tk ()
+janela.title("Cadastro para pacientes")
+janela.geometry("700x400")
+
+abas = ttk.Notebook(janela)
+abas.pack(fill="both", expand=True)
+
+#aba1 - Cadastro 
+aba1= Frame(abas)
+abas.add(aba1, text = "Cadastro")
+
+#abas2 - Tabela
+aba2= Frame(abas)
+abas.add(aba2, text = "Pacientes cadastrados")
+
+#Função cadastrar 
+def cadastrar ():
+    Nome = Entry_Nome.get()
+    CPF =  Entry_CPF.get()
+    Data_de_Nascimento = Entry_Data_de_Nascimento.get()
+    Telefone = Entry_Telefone.get()
+    Email = Entry_Email.get()
+    Convênio/SUS = Entry_Convênio/SUS.get()
+    Contato_de_emergência = Entry_Contato_de_emergência.get()
+    
+    
